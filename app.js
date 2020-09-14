@@ -71,15 +71,19 @@ function filterTodo(e) {
       case "completed":
         if (todo.classList.contains("completed")) {
           todo.style.display = "flex";
+          break;
         } else {
           todo.style.display = "none";
+          break;
         }
         break;
       case "uncompleted":
         if (!todo.classList.contains("completed")) {
           todo.style.display = "flex";
+          break;
         } else {
           todo.style.display = "none";
+          break;
         }
     }
   });
