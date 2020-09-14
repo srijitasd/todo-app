@@ -15,6 +15,34 @@ header {
   font-size: 1.5rem;
 }
 
+section,
+header {
+  filter: blur(2px);
+}
+
+.modal {
+  background-color: white;
+  color: black;
+  width: 45%;
+  padding: 2rem;
+  position: absolute;
+  right: 28%;
+  z-index: 100;
+  border-radius: 1rem;
+}
+
+.closeModal {
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  color: wheat;
+  font-size: 1.2rem;
+  background-color: #ff6f47;
+  border: none;
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+}
+
 section {
   width: 100vw;
 }
@@ -150,6 +178,11 @@ select {
 @media only screen and (max-width: 425px) {
   header {
     font-size: 1.2rem;
+  }
+
+  .modal {
+    width: 90%;
+    right: 5%;
   }
 
   form {

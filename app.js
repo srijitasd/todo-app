@@ -4,6 +4,10 @@ const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 const filterOption = document.querySelector(".filter-todo");
+const modal = document.querySelector(".modal");
+const section = document.querySelector("section");
+const header = document.querySelector("header");
+const closeModal = document.querySelector(".closeModal");
 
 //event listeners
 document.addEventListener("DOMContentLoaded", getTodos);
@@ -12,6 +16,21 @@ todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("click", filterTodo);
 
 //functions
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (localStorage.getItem("welcome") === null) {
+    closeModal.addEventListener("click", function () {
+      section.style.filter = "blur(0px)";
+      header.style.filter = "blur(0px)";
+      localStorage.setItem("welcome", "checked");
+      modal.style.display = "none";
+    });
+  } else {
+    modal.style.display = "none";
+    section.style.filter = "blur(0px)";
+    header.style.filter = "blur(0px)";
+  }
+});
 
 function addTodo(event) {
   //prevent default
