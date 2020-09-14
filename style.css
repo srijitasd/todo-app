@@ -144,9 +144,9 @@ select {
   background: white;
 }
 
-@media only screen and (orientation: portrait) {
+@media only screen and (max-width: 425px) {
   header {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   form {
@@ -156,8 +156,8 @@ select {
 
   form input {
     max-width: 45%;
-    padding: 0.55rem;
-    font-size: 1.2rem;
+    padding: 0.6rem;
+    font-size: 18px;
   }
 
   form button {
@@ -190,6 +190,6 @@ select {
   }
 
   .select::after {
-    padding: 0.5rem 0.3rem;
+    padding: 0.55rem 0.3rem;
   }
 }
