@@ -151,7 +151,7 @@ select {
   }
 
   form input {
-    width: 45%;
+    max-width: 45%;
     padding: 0.55rem;
     font-size: 1.2rem;
   }
@@ -186,6 +186,6 @@ select {
   }
 
   .select::after {
-    padding: 0.49rem 0.3rem;
+    padding: 0.5rem 0.3rem;
   }
 }
