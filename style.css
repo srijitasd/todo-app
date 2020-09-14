@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: "poppins", sans-serif;
+  background-image: linear-gradient(120deg, #f6d265, #fda085);
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+@media only screen and (orientation: portrait) {
+  header {
+    font-size: 1rem;
+  }
+
+  form {
+    min-height: 0rem;
+  }
+
+  form input {
+    width: 80%;
+    padding: 0.1rem;
+  }
+
+  form button {
+    padding: 0.1rem 0.5rem;
+  }
+}
