@@ -55,6 +55,18 @@ form {
   align-items: center;
 }
 
+.form-group {
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  grid-template-rows: 0fr 0fr;
+  overflow: hidden;
+}
+
+form input {
+  width: 100%;
+}
+
 form input,
 form button {
   padding: 0.5rem;
@@ -93,7 +105,7 @@ form button:hover {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 0.2rem;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -185,13 +197,20 @@ select {
     right: 5%;
   }
 
+  .form-group {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 0fr 0fr;
+  }
+
   form {
     min-height: 0rem;
     margin-bottom: 2rem;
   }
 
   form input {
-    max-width: 45%;
+    height: 100%;
     padding: 0.685rem;
     font-size: 16px;
   }
@@ -206,7 +225,7 @@ select {
 
   .todo {
     margin: 0.3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .trash-btn,
