@@ -8,6 +8,8 @@ const modal = document.querySelector(".modal");
 const section = document.querySelector("section");
 const header = document.querySelector("header");
 const closeModal = document.querySelector(".closeModal");
+var trashAudio = new Audio("deleteRingtone.mp3");
+var clickAudio = new Audio("click.mp3");
 
 //event listeners
 document.addEventListener("DOMContentLoaded", getTodos);
@@ -65,6 +67,7 @@ function deleteCheck(e) {
   const item = e.target;
   // delete todo
   if (item.classList[0] === "trash-btn") {
+    trashAudio.play();
     const todo = item.parentElement;
     todo.classList.add("fall");
     //remove local todo
@@ -75,6 +78,7 @@ function deleteCheck(e) {
   }
   //check todo
   if (item.classList[0] === "complete-btn") {
+    clickAudio.play();
     const todo = item.parentElement;
     todo.classList.toggle("completed");
   }
